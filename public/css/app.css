@@ -1,0 +1,16 @@
+#content{
+  height: 100vh;
+  padding: 5em 1em 1em 1em;
+}
+.header-search{
+  display: block !important;
+  margin-left: auto !important;
+}
+.center-block{
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+#dashboard{
+  background-color: grey;
+}
