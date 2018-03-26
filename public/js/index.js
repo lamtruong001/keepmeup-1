@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.ui.sidebar').sidebar('setting','closeable',false).sidebar('attach events', '#burger');
+  $('.ui.sidebar').sidebar('setting','closeable',false).sidebar('attach events', '#burger').sidebar('');
       $(".remove").off('click').on('click', function(){
           $('.ui.sidebar') .sidebar('hide');
       });
