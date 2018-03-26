@@ -17,14 +17,14 @@ router.get('/login', function(req, res){
 
 // Register User
 router.post('/register', function(req, res){
-	var name = req.body.name;
+	var fullName = req.body.fullName;
 	var email = req.body.email;
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
 	console.log(JSON.stringify(req.body));
 	// Validation
-	req.checkBody('name', 'Name is required').notEmpty();
+	req.checkBody('fullName', 'Name is required').notEmpty();
 	req.checkBody('email', 'Email is required').notEmpty();
 	req.checkBody('email', 'Email is not valid').isEmail();
 	req.checkBody('username', 'Username is required').notEmpty();
@@ -39,7 +39,7 @@ router.post('/register', function(req, res){
 		});
 	} else {
 		var newUser = new User({
-			name: name,
+			fullName: fullName,
 			email:email,
 			username: username,
 			password: password
@@ -52,7 +52,7 @@ router.post('/register', function(req, res){
 
 		req.flash('success_msg', 'You are registered and can now login');
 
-		res.redirect('/users/login');
+		res.redirect('/login');
 	}
 });
 
@@ -96,7 +96,7 @@ router.get('/logout', function(req, res){
 
 	req.flash('success_msg', 'You are logged out');
 
-	res.redirect('/users/login');
+	res.redirect('/login');
 });
 
 module.exports = router;
