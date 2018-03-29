@@ -47,6 +47,17 @@
             </div>
           </div>
          <div id="content" class="ui grid">
+           {{#if success_msg}}
+            <div class="alert alert-success ui message">{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div class="alert alert-danger ui message">{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div class="alert alert-danger ui message">{{error}}</div>
+          {{/if}}
             {{{body}}}
          </div>
       </div>
