@@ -11,12 +11,12 @@ router.get('/register', function(req, res){
 });
 //Settings
 router.get('/settings', function(req, res){
-	res.render('settings');
+	res.render('pages/settings');
 });
 
 //Privacy
 router.get('/privacy', function(req, res){
-	res.render('privacy');
+	res.render('pages/privacy');
 });
 
 // Login
