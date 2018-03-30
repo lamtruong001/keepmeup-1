@@ -7,7 +7,7 @@ var User = require('../models/user');
 
 // Register
 router.get('/register', function(req, res){
-	res.render('register');
+	res.render('pages/register');
 });
 //Settings
 router.get('/settings', function(req, res){
@@ -21,7 +21,7 @@ router.get('/privacy', function(req, res){
 
 // Login
 router.get('/login', function(req, res){
-	res.render('login');
+	res.render('pages/login');
 });
 
 // Register User
@@ -72,7 +72,6 @@ passport.use(new LocalStrategy(
    	if(!user){
    		return done(null, false, {message: 'Unknown User'});
    	}
-
    	User.comparePassword(password, user.password, function(err, isMatch){
    		if(err) throw err;
    		if(isMatch){
@@ -99,6 +98,7 @@ router.post('/login',
   function(req, res) {
     res.redirect('/');
   });
+
 	router.get('/logout', function(req, res){
 		req.logout();
 

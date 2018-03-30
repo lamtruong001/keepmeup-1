@@ -2,6 +2,9 @@
   height: 100vh;
   padding: 5em 1em 1em 1em;
 }
+.lab-hidden{
+  display: none !important;
+}
 .header-search{
   display: block !important;
   margin-left: auto !important;
@@ -14,7 +17,15 @@
 #dashboard{
   background-color: grey;
 }
+<<<<<<< HEAD
+.login-column{
+  max-width: 450px;
+}
+#login{
+height: 100%;
+=======
 
 #navBar{
     background-color: #eb531c;
+>>>>>>> 76cfab9b3594267680be0b9ee102df411fa91445
 }
