@@ -12,7 +12,7 @@ router.get('/register', function(req, res){
 
 //Privacy
 router.get('/privacy', function(req, res){
-	res.render('privac');
+	res.render('privacy');
 });
 
 // Login
