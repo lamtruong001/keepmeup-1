@@ -9,6 +9,10 @@ var User = require('../models/user');
 router.get('/register', function(req, res){
 	res.render('register');
 });
+//Settings
+router.get('/settings', function(req, res){
+	res.render('settings');
+});
 
 //Privacy
 router.get('/privacy', function(req, res){
