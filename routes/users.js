@@ -10,6 +10,11 @@ router.get('/register', function(req, res){
 	res.render('register');
 });
 
+//Privacy
+router.get('/privacy', function(req, res){
+	res.render('privac');
+});
+
 // Login
 router.get('/login', function(req, res){
 	res.render('login');
