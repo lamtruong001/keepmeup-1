@@ -66,9 +66,7 @@
        <form class="ui form" method="push" action="/privacy">
            <div class="twelve wide centered column">
               <img class="ui tiny centered image" src="../images/keepmeup-logo.png">
-              <p id="demo"></p>
-               
-<button onclick="function gotData(err, data, response">Click me</button>
+
              <h3>Privacy</h3>
                <p>We promise to only hold onto your data for as long as necessary and never to sell on to third parties.</p>
                <h3>Terms and conditions</h3>
@@ -272,17 +270,6 @@
     </div>
   <script>
       
-
-
-function gotData(err, data, response) {
-    var tweets = data.statuses;
-   for (var i = 0; i<tweets.length; i++){
-     console.log(tweets[i].text);  
-    document.getElementById("demo").innerHTML = ("tweets[i].text");
-    }
-    
-};
-
 function openNav() {
     document.getElementById("mySidenav").style.width = "150px";
     document.getElementById("main").style.marginLeft = "150px";
