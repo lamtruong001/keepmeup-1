@@ -1,11 +1,78 @@
-<div class="sixteen wide column">
-
-<div class="ui centered grid">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Group13">
     <link rel="stylesheet" href="/dist/semantic.min.css">
     <link rel="stylesheet" href="/css/app.css">
-          <div class="ten wide centered column">
-          <form class="ui form" method="post" action="/settings">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    <title>KeepMeUp</title>
+      
+      <style>
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+        transition: margin-left .5s !important;
+    padding: 16px !important;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+  </head>
+  <body>
+
+<div id ="main">
+<div class="sixteen wide column">
+ <form class="ui form" method="post" action="/settings">
+
+
+<div class="ui centered grid">
+               
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="http://process-latin-3000.codio.io">Dashboard</a>
+  <a href="http://process-latin-3000.codio.io/privacy">Privacy</a>
+</div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="ten wide centered column">
            <div id="settingsMenu" class="ui three item menu">
               <a class="item active" data-tab="basic">
               Basic Information
@@ -17,7 +84,9 @@
                          Add account
                      </a>
                    </div>
-             </div>
+    </div>
+
+    
              <div class="ten wide column">
                  <div class="ui tab active" data-tab="basic">
 
@@ -30,7 +99,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <b>name<b>
+                              <b>name</b>
                           </td>
                           <td>
                             Firstname Lastname
@@ -39,7 +108,7 @@
 
                         <tr>
                           <td>
-                            <b>age<b>
+                              <b>age</b>
                           </td>
                           <td>
                             xx years old
@@ -48,7 +117,7 @@
 
                         <tr>
                           <td>
-                            <b>username<b>
+                              <b>username</b>
                           </td>
                           <td>
                             KeepMeUp Username
@@ -57,7 +126,7 @@
 
                         <tr>
                           <td>
-                            <b>contact<b>
+                              <b>contact</b>
                           </td>
                           <td>
                             (+44) 07x xxx xxxxx
@@ -66,7 +135,7 @@
 
                         <tr>
                           <td>
-                            <b>email<b>
+                              <b>email</b>
                           </td>
                           <td>
                             email@email.com
@@ -74,6 +143,8 @@
                         </tr>
                       </tbody>
                     </table>
+                         </div>
+                         </div>
 
                     <br>
 
@@ -81,8 +152,6 @@
                     <div class = "ui eight wide center aligned segment">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum arcu quis lorem condimentum posuere. Donec nec nisi mauris. Mauris pretium, ligula lacinia fermentum semper, tortor purus posuere tellus, quis porttitor dui nisi sit amet diam.</p>
                     </div>
-
-                 </div>
                  <div class="ui tab" data-tab="account">
                      <br>
                      <div class="ui three column grid">
@@ -191,8 +260,28 @@
                         <button class=" ui button">Search for Account!&nbsp<i class="fa fa-search"></i></button>
                      </div>
                    </div>
-                   
-                   </form>
-                 </div>
-             </div>
-</div>
+                     </div>
+    </div>
+     </div>
+    
+     </form>
+      </div>
+      </div>
+      
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+    document.getElementById("main").style.marginLeft = "150px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+    </body>
+    
+</html>
+    
