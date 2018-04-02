@@ -28,14 +28,7 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "semantic": "0.0.1",
-<<<<<<< HEAD
-    "semantic-ui": "^2.3.0"
-  },
-  "devDependencies": {},
-  "description": ""
-=======
     "semantic-ui": "^2.3.0",
     "twit": "^2.2.9"
   }
->>>>>>> b6068518a636cc484389b821f24fbb0f6152bcf8
 }
