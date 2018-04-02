@@ -30,5 +30,7 @@
     "semantic": "0.0.1",
     "semantic-ui": "^2.3.0",
     "twit": "^2.2.9"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
