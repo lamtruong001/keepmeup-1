@@ -19,17 +19,23 @@
     "bcrypt": "^1.0.3",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.8",
     "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "express-validator": "^5.0.3",
-    "mongodb": "^3.0.4",
-    "mongoose": "^5.0.9",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.11",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "semantic": "0.0.1",
+<<<<<<< HEAD
     "semantic-ui": "^2.3.0"
   },
   "devDependencies": {},
   "description": ""
+=======
+    "semantic-ui": "^2.3.0",
+    "twit": "^2.2.9"
+  }
+>>>>>>> b6068518a636cc484389b821f24fbb0f6152bcf8
 }
