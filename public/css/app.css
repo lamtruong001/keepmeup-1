@@ -1,6 +1,7 @@
 #content{
   height: 100vh;
   padding: 5em 1em 1em 1em;
+  overflow-y: auto;
 }
 .lab-hidden{
   display: none !important;
