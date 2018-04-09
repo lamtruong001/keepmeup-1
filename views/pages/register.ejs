@@ -1,39 +1,51 @@
-<div class="sixteen wide column">
-<!-- {{#if errors}}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="/dist/semantic.min.css">
+      <link rel="stylesheet" href="/css/app.css">
+  </head>
+  <body>
+    <!-- {{#if errors}}
   {{#each errors}}
   <div class="alert ui error message">{{msg}}</div>
   {{/each}}
 {{/if}} -->
-<div class="ui grid padded centered algined ">
-    <link rel="stylesheet" href="/dist/semantic.min.css">
-    <link rel="stylesheet" href="/css/app.css">
-  <form class="ui form" action="/register" method="post">
+<div id="register" class="ui centered alligned middle alligned padded grid">
+      
+    <h2 class="ui header">Sign up with us!</h2>
+    <div class="ui segment"> 
+        <h2 class="ui icon header">
+      <i class="user circle icon"></i>
+        </h2>
+      
+      <form class="ui form" action="/register" method="post">
   <!-- Put form in here e.g.  -->
   <div class="field">
-     <label>Name</label>
-     <input type="text" name="name" placeholder="Name">
+     <input type="text" name="name" placeholder="Full Name">
    </div>
    <div class="field">
-     <label>Username</label>
      <input type="text" name="username" placeholder="Username">
    </div>
    <div class="field">
-     <label>Email</label>
      <input type="email" name="email" placeholder="Email">
    </div>
    <div class="field">
-     <label>Password</label>
      <input type="password" name="password" placeholder="Password">
    </div>
    <div class="field">
-     <label>Confirm Password</label>
      <input type="password" name="password2" placeholder="Confirm Password">
    </div>
-   <button type="submit" class="ui button" name="button">Get Started! </button>
-      
+   <button type="submit" class="ui fluid large orange submit button" name="button">Get Started!</button>   
+          <div class="ui divider"></div>
         <div class="ui message">
-      Already have an account? <a href="http://process-latin-3000.codio.io/login">Login!</a>
+      Already have an account? <a href="/login">Login!</a>
     </div>
   </form>
 </div>
 </div>
+</body>
+</html>
+
+

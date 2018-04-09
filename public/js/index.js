@@ -9,5 +9,10 @@ Index.load = function(){
 
       $(".header-search .prompt").on("click", function(){
         alert("not implemented yet, sorry!");
+      
+      $('.menu .item').tab();
+      $('.vertical.pointing.menu .item').tab();
+          
+      
       })
 }
