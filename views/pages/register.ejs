@@ -12,38 +12,41 @@
   <div class="alert ui error message">{{msg}}</div>
   {{/each}}
 {{/if}} -->
-<div id="register" class="ui centered alligned middle alligned padded grid">
+<div id="register" class="ui middle aligned center aligned grid">
       
-    <h2 class="ui header">Sign up with us!</h2>
+    <div class = "column">
+    <h2 class="ui orange header">Sign up with us!</h2>
+        <p id="login-text">Register yourself to enjoy all your favourite social media feeds on one place.</p>
+        <br>
     <div class="ui segment"> 
-        <h2 class="ui icon header">
+        <h2 class="ui orange icon header">
       <i class="user circle icon"></i>
         </h2>
       
       <form class="ui form" action="/register" method="post">
-  <!-- Put form in here e.g.  -->
-  <div class="field">
-     <input type="text" name="name" placeholder="Full Name">
-   </div>
-   <div class="field">
-     <input type="text" name="username" placeholder="Username">
-   </div>
-   <div class="field">
-     <input type="email" name="email" placeholder="Email">
-   </div>
-   <div class="field">
-     <input type="password" name="password" placeholder="Password">
-   </div>
-   <div class="field">
-     <input type="password" name="password2" placeholder="Confirm Password">
-   </div>
-   <button type="submit" class="ui fluid large orange submit button" name="button">Get Started!</button>   
-          <div class="ui divider"></div>
+          <!-- Put form in here e.g.  -->
+          <div class="field">
+             <input type="text" name="name" placeholder="Full Name">
+           </div>
+           <div class="field">
+             <input type="text" name="username" placeholder="Username">
+           </div>
+           <div class="field">
+             <input type="email" name="email" placeholder="Email">
+           </div>
+           <div class="field">
+             <input type="password" name="password" placeholder="Password">
+           </div>
+           <div class="field">
+             <input type="password" name="password2" placeholder="Confirm Password">
+           </div>
+           <button type="submit" class="ui fluid large orange submit button" name="button">Get Started!</button>   
+          </form>
+        </div>
         <div class="ui message">
-      Already have an account? <a href="/login">Login!</a>
+        Already have an account? <a href="/login">Login!</a>
+        </div>
     </div>
-  </form>
-</div>
 </div>
 </body>
 </html>
